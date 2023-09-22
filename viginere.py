@@ -49,8 +49,6 @@ def main():
     with open(args.file_path, 'r') as f:
         ciphertext = f.read()
 
-    print(ciphertext[:100])
-
     # start with key length = 1
     key_length = 1
     subtexts = []
@@ -98,7 +96,6 @@ def main():
         if input('Press y if the text is readable:') == 'y':
             break
 
-    print(dec)
 
     with open('text.txt', 'w') as f:
         print('Writing decoded text in text.txt...')
